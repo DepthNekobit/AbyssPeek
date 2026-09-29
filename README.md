@@ -73,6 +73,9 @@ python main.py
 ```
 
 自分で exe 化する場合は、同梱の `.ico` をそのまま使えます。
+ビルドは**新しい仮想環境**で行ってください。`requirements-build.txt` は最小構成の
+PySide6-Essentials を使いますが、フル版の PySide6 が入った環境でビルドすると、アプリが
+使わない Qt モジュール(GPL のみで提供されるものを含む)まで exe に同梱されます。
 
 ```bash
 pip install -r requirements-build.txt
@@ -105,13 +108,14 @@ pyinstaller --noconsole --onefile --icon assets/icon/abysspeek.ico --add-data "a
 AbyssPeek/
 ├── main.py                     # エントリポイント
 ├── THIRD_PARTY_NOTICES.md      # サードパーティのライセンス表記
-├── licenses/                   # LGPLv3 / GPLv3 の全文
+├── licenses/                   # LGPLv3 / GPLv3 / Apache-2.0 の全文、Qt 同梱コンポーネントの表記
 ├── assets/
 │   ├── sample_header.txt       # デモ用サンプル(フィッシング風・架空ドメイン)
 │   └── icon/                   # アプリアイコン (PNG 各サイズ / Windows 用 .ico)
 ├── tools/
 │   ├── generate_icon.py        # アイコン画像の再生成スクリプト
-│   └── generate_geoip_table.py # IPv4 /8 地域テーブルの再生成スクリプト
+│   ├── generate_geoip_table.py # IPv4 /8 地域テーブルの再生成スクリプト
+│   └── generate_qt_notices.py  # Qt 同梱コンポーネントのライセンス表記の生成スクリプト
 ├── src/
 │   ├── io/file_handler.py      # ファイル入出力(文字コードフォールバック付き)
 │   ├── services/
@@ -157,7 +161,8 @@ python -m unittest discover -s tests -v
 本プロジェクトのソースコードは [MIT License](LICENSE) で公開しています。
 
 GUI フレームワークとして [PySide6 (Qt for Python)](https://doc.qt.io/qtforpython-6/) を
-**LGPLv3** の条件で利用しており、配布物(exe)には PySide6 / Qt のバイナリが含まれます。
+**LGPLv3** の条件で利用しており、配布物(exe)には PySide6 / Qt のバイナリ
+(PySide6-Essentials、バージョンは `requirements-build.txt` で固定)が含まれます。
 本アプリのソースコードは本リポジトリで全て公開されているため、LGPL が求める
 ライブラリの差し替え・再ビルドはソースから自由に行えます。
 

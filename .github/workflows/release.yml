@@ -43,6 +43,14 @@ jobs:
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
 
+      - name: Remove unused optional Qt DLLs
+        shell: pwsh
+        run: |
+          # 本アプリは OpenGL を使わないため、Mesa 由来のソフトウェア OpenGL レンダラー
+          # (opengl32sw.dll) を exe に同梱しない (PyInstaller は存在すれば自動で収集する)
+          $pyside = python -c "import pathlib, PySide6; print(pathlib.Path(PySide6.__file__).parent)"
+          Get-ChildItem $pyside -Recurse -Filter opengl32sw.dll | Remove-Item -Verbose
+
       - name: Collect Python license
         shell: pwsh
         run: |

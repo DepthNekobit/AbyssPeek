@@ -529,6 +529,7 @@ class MainWindow(QMainWindow):
             "・外部への通信は一切行いません</p>"
             "<p>MIT License / © 2026 DepthNekobit<br>"
             "Qt for Python (PySide6) を LGPLv3 の条件で使用しています。<br>"
+            "Qt: Copyright (C) The Qt Company Ltd. and other contributors.<br>"
             "詳細は「ヘルプ → サードパーティ ライセンス」を参照してください。</p>",
         )
 

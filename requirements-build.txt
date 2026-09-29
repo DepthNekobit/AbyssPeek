@@ -1,2 +1,6 @@
--r requirements.txt
+# Windows 版 exe のビルド用。
+# exe に同梱する Qt を、アプリが使う最小構成 (Essentials) の固定バージョンにする。
+# バージョンを変えたら THIRD_PARTY_NOTICES.md と licenses/Qt-third-party-notices.txt
+# (tools/generate_qt_notices.py で再生成) も更新すること。
+PySide6-Essentials==6.11.2
 PyInstaller>=6,<7
