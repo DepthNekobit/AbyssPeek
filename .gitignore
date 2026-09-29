@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OS が生成するファイル
+.DS_Store
+Thumbs.db
+
+# リリースビルド時に CI が生成する Python のライセンス写し
+licenses/LICENSE-Python.txt

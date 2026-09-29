@@ -1,0 +1,36 @@
+Delivered-To: victim@example.net
+Received: from mail.abyss-bank.example (unknown [203.0.113.66])
+	by mx.example.net (Postfix) with ESMTP id 4XYZ789abc
+	for <victim@example.net>; Mon, 6 Jul 2026 09:15:21 +0900 (JST)
+Authentication-Results: mx.example.net;
+	spf=fail (sender IP is 203.0.113.66) smtp.mailfrom=abyss-bank-security.top;
+	dkim=none;
+	dmarc=fail (p=reject) header.from=abyss-bank.example
+X-Spam-Checker-Version: SpamAssassin 4.0.0 (2022-12-13) on mx.example.net
+X-Spam-Status: Yes, score=8.4 required=5.0 tests=SPF_FAIL,URIBL_ABUSE_SURBL,
+	HTML_MESSAGE,MIME_HTML_ONLY autolearn=no version=4.0.0
+X-Spam-Level: ********
+Received: from [192.168.11.7] (helo=WIN-USER-PC)
+	by mail.abyss-bank.example with esmtpa (Exim 4.92)
+	id 1abcde-000001-AB; Mon, 6 Jul 2026 09:15:02 +0900
+Return-Path: <bounce@abyss-bank-security.top>
+Reply-To: support@abyss-bank-security.top
+Message-ID: <20260706001502.GA12345@abyss-bank-security.top>
+From: =?UTF-8?B?44Ki44OT44K544OQ44Oz44Kv44CQ6YeN6KaB44CR?= <security@abyss-bank.example>
+To: victim@example.net
+Subject: =?UTF-8?B?44CQ57eK5oCl44CR44GK5a6i5qeY44Gu44Ki44Kr44Km44Oz44OI44GM5YGc5q2i44GV44KM44G+44GX44Gf?=
+Date: Mon, 6 Jul 2026 09:14:58 +0900
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+CjxwPuOCouODk+OCueODkOODs+OCr+OCkuOBlOWIqeeUqOOBruOBiuWuouan
+mDwvcD4KPHA+44GK5a6i5qeY44Gu44Ki44Kr44Km44Oz44OI44Gr5LiN5a+p44Gq44Ot44Kw44Kk
+44Oz44GM56K66KqN44GV44KM44Gf44Gf44KB44CB5LiA5pmC55qE44Gr44GU5Yip55So44KS5YGc
+5q2i44GX44G+44GX44Gf44CCMjTmmYLplpPku6XlhoXjgavmnKzkurrnorroqo3jgpLlrozkuobj
+gZfjgabjgY/jgaDjgZXjgYTjgII8L3A+CjxwPjxhIGhyZWY9Imh0dHA6Ly94bi0tYWJ5c3MtOHE0
+ZnNjLnRvcC9sb2dpbj9pZD12aWN0aW0iPmh0dHBzOi8vd3d3LmFieXNzLWJhbmsuZXhhbXBsZS92
+ZXJpZnk8L2E+PC9wPgo8cD7jgZTlr77lv5zjgYTjgZ/jgaDjgZHjgarjgYTloLTlkIjjgIHjgqLj
+gqvjgqbjg7Pjg4jjga/msLjkuYXjgavliKnnlKjlgZzmraLjgZXjgozjgb7jgZnjgII8L3A+Cjxw
+PuOCouODk+OCueODkOODs+OCryDjgrvjgq3jg6Xjg6rjg4bjgqPjgrvjg7Pjgr/jg7w8L3A+Cjwv
+Ym9keT48L2h0bWw+Cg==
