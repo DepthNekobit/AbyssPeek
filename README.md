@@ -108,6 +108,7 @@ pyinstaller --noconsole --onefile --icon assets/icon/abysspeek.ico --add-data "a
 AbyssPeek/
 ├── main.py                     # エントリポイント
 ├── THIRD_PARTY_NOTICES.md      # サードパーティのライセンス表記
+├── SECURITY.md                 # 脆弱性の報告方法
 ├── licenses/                   # LGPLv3 / GPLv3 / Apache-2.0 の全文、Qt 同梱コンポーネントの表記
 ├── assets/
 │   ├── sample_header.txt       # デモ用サンプル(フィッシング風・架空ドメイン)
@@ -150,6 +151,7 @@ python -m unittest discover -s tests -v
 
 不具合や判定ミス(誤検知・見逃し)の報告、機能の要望は
 [Issues](https://github.com/DepthNekobit/AbyssPeek/issues) へお寄せください。
+脆弱性は公開の Issue ではなく、[SECURITY.md](SECURITY.md) の手順で非公開で報告してください。
 
 > [!WARNING]
 > 実際に受信したメールのヘッダーには、あなたや受信者のメールアドレス・IP アドレス・
